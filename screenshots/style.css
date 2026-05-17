@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #002B5B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    /* مهم: لتحديد موقع زر الخروج داخله */
+    position: relative; 
+}
+
+/* تنسيق الشعار */
+.logo {
+    width: 100px;
+    border-radius: 10px;
+}
+
+/* تنسيق قسم الخروج ليكون في الزاوية العليا اليمنى */
+.logout-section {
+    position: absolute; 
+    top: 30px; 
+    right: 20px; 
+}
+
+/* التنسيق الجديد لوسم <button> لجعله يظهر بالصندوق الأحمر */
+.logout-button {
+    background-color: #cc0000; /* لون أحمر داكن للخلفية */
+    color: white; /* لون النص أبيض */
+    padding: 8px 10px;
+    border: 1px solid #ff4d4d; /* حد أحمر فاتح */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    
+    /* === تغيير الخط === */
+    font-family: 'Tahoma', sans-serif; 
+    
+    /* لضمان إزالة التنسيق الافتراضي للزر */
+    text-decoration: none; 
+    display: inline-block; 
+}
+
+.logout-button:hover {
+    background-color: #ff4d4d; /* يصبح أحمر فاتح عند التحويم */
+}
+
+/* تنسيقات أخرى */
+
+.login-section {
+    text-align: center;
+    margin: 20px;
+}
+
+form input {
+    margin: 5px;
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.social-media, .video {
+    text-align: center;
+    margin: 20px;
+}
+
+.info-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+.info-table th, .info-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* تنسيق الفوتر (Footer) */
+footer {
+    background-color: #002B5B;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيقات الأجهزة الصغيرة */
+@media (max-width: 600px) {
+    .info-table {
+        width: 100%;
+        font-size: 14px;
+    }
+}
