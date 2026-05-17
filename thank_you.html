@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #002B5B; 
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+        .message-box {
+            padding: 40px;
+            background-color: #fff;
+            color: #002B5B;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message-box">
+        <h1>Thank You!</h1>
+        <p>You have been successfully logged out.</p>
+        <p>Redirecting to the login page in 3 seconds...</p>
+    </div>
+
+    <script>
+        // إعداد مؤقت لإعادة التوجيه بعد 3 ثواني
+        setTimeout(function() {
+            window.location.href = 'index.php'; 
+        }, 3000); 
+    </script>
+
+</body>
+</html>
